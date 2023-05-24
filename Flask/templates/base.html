@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block titulo %}{% endblock %}
+    <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Página inicial</a> |
+            <a href="/cursos">Cursos disponiveis</a> |
+            <a href="/curso/html">HTML</a> |
+            <a href="/curso/poo">POO</a>
+        </nav>
+    </header>
+    <main>
+        {% block conteudo %}{% endblock %}
+    </main>
+    <footer>
+        <p><strong>Rodapé de demonstração</p></strong>
+    </footer>
+</body>
+</html>
